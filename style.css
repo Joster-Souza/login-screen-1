@@ -1,0 +1,254 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: gray;
+    display: flex;
+    min-height: 100%;
+
+}
+
+
+#main{
+    margin: 0px;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(101, 141, 163); */
+    background-image: linear-gradient(to left, rgb(56, 92, 116), rgb(0, 174, 255));
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 5rem;
+    padding: 13rem 2em 7rem 2rem;
+    position: relative;
+    background-image: linear-gradient(to left, rgb(0, 217, 255), rgb(0, 162, 255));
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.466);
+    border-radius: 20% 20px 0px 0px;
+    
+}
+
+#log{
+    display: flex;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 23%;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.616);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.466);
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 0px 0px 125px 20px;
+}
+
+#center-box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+    top: 3rem;
+}
+
+#input-style{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    border: none;
+    border-radius:50px;
+    height: 5rem;
+    width: 30rem;
+    color: rgb(0, 152, 223);
+    text-align: center;
+    text-justify: center;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0px 2px 2px rgba(0, 90, 90, 0.37);
+}
+
+#remember-box{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0rem;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+#logo{
+    
+    display: flex;
+    position: absolute;
+    top: 5rem;
+    width: 9rem;
+    height: 9rem;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 2px 2px rgba(0, 90, 90, 0.39);
+}
+
+#logo-main{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    bottom: 13rem;
+}
+
+#logo-main:hover + #logo:hover{
+    position: relative;
+    display: flex;
+    width: 10px;
+    height: 5%;
+}
+
+#logo:hover{
+    padding: 10px;
+    position: absolute;
+    top: 70px;
+
+}
+
+#logo img:hover{
+    padding: 10px;
+    position: absolute;
+
+}
+
+    
+
+img{
+
+    width: 50%;
+    height: 50%;
+}
+
+
+a{
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none; 
+    
+    color: white;
+}
+
+
+.custom-checkbox{
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none; 
+                               
+
+
+}
+
+.custom-checkbox input{
+    display: none;
+}
+    
+
+.custom-checkbox input + label:before{
+    content: '';
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    border: solid 1px white;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+}
+
+.custom-checkbox input:hover + label:before{
+    cursor: pointer;
+}
+
+#lembr:hover{
+    cursor: pointer;
+}
+
+.custom-checkbox input:checked + label:before{
+
+    background-color: rgb(0, 217, 255);
+
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+#password-icon{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='30px' height='30px' viewBox='0 0 512 512' id='_x30_1' style='enable-background:new 0 0 512 512;' version='1.1' xml:space='preserve'%3E%3Cpath d='M416,172h-40v-52C376,53.726,322.274,0,256,0h0c-66.274,0-120,53.726-120,120v52H96c-33.137,0-60,26.863-60,60v220 c0,33.137,26.863,60,60,60h320c33.137,0,60-26.863,60-60V232C476,198.863,449.137,172,416,172z M196,120c0-33.137,26.863-60,60-60 l0,0c33.137,0,60,26.863,60,60v52H196V120z M286,363.953V402c0,16.569-13.431,30-30,30l0,0c-16.569,0-30-13.431-30-30v-38.047 c-18.289-10.584-30.483-30.531-29.985-53.295c0.701-32.067,27.03-58.19,59.102-58.652C288.658,251.524,316,278.569,316,312 C316,334.204,303.929,353.578,286,363.953z'/%3E%3C/svg%3E");
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 2rem;
+    bottom: 5rem;
+    opacity: 75%;
+}
+
+#profile-icon{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='30px' height='30px' viewBox='0 0 512 512' id='_x30_1' style='enable-background:new 0 0 512 512;' version='1.1' xml:space='preserve'%3E%3Cg%3E%3Cellipse cx='256' cy='130' rx='110' ry='130'/%3E%3Cpath d='M36,478.191C36,390.825,134.497,320,256,320s220,70.825,220,158.191v0C476,496.863,460.863,512,442.192,512H69.808 C51.137,512,36,496.863,36,478.191L36,478.191z'/%3E%3C/g%3E%3C/svg%3E");
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 2rem;
+    bottom: 11.998rem;
+    opacity: 75%;
+}
+
+#profile-icon{
+    pointer-events: none;
+}
+
+#password-icon{
+    pointer-events: none;
+
+}
+
+#bar-1{
+    position: absolute;
+    left: 4.5rem;
+    bottom: 11.8rem;
+    display: flex;
+    width: 1.5px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    opacity: 75%;
+}
+
+#bar-2{
+    position: absolute;
+    left: 4.5rem;
+    bottom: 4.7rem;
+    display: flex;
+    width: 1.5px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    opacity: 75%;
+}
+
+#coury{
+    display: flex;
+}
+
